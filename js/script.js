@@ -1,14 +1,3 @@
-/* The following javascript file contains elements of AI generated code to create 
-a fade in effect when scrolling down the webpage. The code has been edited to fit the 
-use of the website being made.*/
-
-/* The AI tool used for creating these scripts was Open Ai's  Chat GPT-3 */
-
-/* The following was inspired by multiple sources including W3Schools and ChatGPT */
-
-/* When the page will be loaded the only tab open will be "#recent"
-and all other tabs are hidden until a button is clicked revealing the 
-new tab---------------------------------------------------------------*/
 
 // Initialize EmailJS with your user ID
 emailjs.init('YOUR_USER_ID');
@@ -109,6 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
 
 //=======Slider
 function scrollLeft(containerId) {
