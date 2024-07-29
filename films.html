@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+    <title>Jambo films</title>  <!--this is the title in the browser TAB-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/films.css">
+    <link rel="stylesheet" href="path/to/flickity.css" media="screen">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="hamnav">
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger"/>
+    
+        <div id="hamitems">
+            <a class="link" href="index.html"><img class="icon" src="Images/jambo-studios-logo.svg" alt="logo-image"/></a>
+            <a class="link" href="index.html#services">Explore</a>
+            <a class="link" href="films.html">Jambo Films</a>
+            <a class="link" href="index.html#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="films-container">
+            <section class="films-intro">
+                <video id="films-page-video" loop autoplay muted playsinline loading="lazy">
+                    <source src="videos/parallax02.mp4" type="video/mp4">
+                </video>
+            <section id="heading2">
+                <img class="logo" src="Images/jambo-films-logo.svg">
+                <h3>
+                    A collection of films (stories) by Adil Afzaal.
+                </h3>
+                <h5><button class="contact-button"><a href="https://www.youtube.com/channel/UCcv-2XxSvD1lp8kySszrgkw">View Channel</a></button></h5>
+            </section>
+            </section>
+
+            <section class="Gopro">
+                <iframe class="iframe-container" title="Gopro Film"
+                    src="https://www.youtube.com/embed/-BUwhJJX0eQ?si=xnU2uaaPBMVbN82c7Z9J8w&mute=1&loop=1&playlist=-BUwhJJX0eQ&vq=hd1080"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+                <section class="films-description">
+                    <h4>Underwater - The Quest to Revive a GoPro</h4>
+                    <p>
+                        A cinematic expression of how I felt when I broke my GoPro. 
+                        Shot on the Sony FX30.
+                    </p>
+                </section>
+            </section>
+
+            <section class="Sydney">
+                <iframe class="iframe-container" title="Sydney Video"
+                    src="https://www.youtube.com/embed/Kx_COxY4rk4?mute=1&loop=1&playlist=Kx_COxY4rk4&vq=hd1080"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+                <section class="films-description">
+                    <h4>Harbour Town (2023)</h4>
+                    <p>
+                        Shot exclusively on the Sony FX30, embark on a cinematic experience 
+                        through the heart of Sydney in "HARBOUR TOWN," a short film that 
+                        captures the essence of a unique summer experience in Australia's 
+                        most famous city.
+                    </p>
+                </section>
+            </section>
+            <section class="Melbourne">
+                <iframe class="iframe-container" title="Melbourne Video"
+                    src="https://www.youtube.com/embed/SOOECxpTQdg?mute=1&loop=1&playlist=SOOECxpTQdg&vq=hd1080"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+                <section class="films-description">
+                    <h4>Summer Rain (2023)</h4>
+                    <p>
+                        A cinematic experience of my trip to Melbourne, 
+                        where the summer wasn't so bright and sunny, but 
+                        rather wet and cloudy. A story that is shot on the Sony FX30.
+                    </p>
+                </section>
+
+            </section>
+            <section class="three">
+                <h5><button class="contact-button"><a href="https://www.youtube.com/channel/UCcv-2XxSvD1lp8kySszrgkw">View Channel</a></button></h5>
+            </section>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="path/to/flickity.pkgd.min.js"></script>
+
+</body>
+</html>
+
