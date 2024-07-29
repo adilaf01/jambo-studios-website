@@ -1,0 +1,143 @@
+#projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    color: #F1F2F2;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+#projects hr {
+    border: 1.4px solid #838383;
+    margin: 1rem;
+    width: 85%;
+    border-radius: 10rem;
+}
+
+.project-type {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Corrected */
+    width: 85%;
+    position: relative;
+    gap: 0.7rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #FFB703 #101010; /* For Firefox */
+}
+
+
+.project-container::-webkit-scrollbar {
+    height: 8px; /* Height of the scrollbar */
+}
+
+.project-container::-webkit-scrollbar-thumb {
+    background-color: #FFB703; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.project-container::-webkit-scrollbar-track {
+    background: #101010 ; /* Color of the scrollbar track */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.slider-buttons{
+    border-radius: 20rem;
+    padding: 0px 20px;
+}
+
+.image-container {
+    position: relative;
+    flex: 0 0 auto;
+    width: 28%;
+    height: auto;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease-in-out; /* Applied to the non-hover state as well */
+}
+
+.image-container:hover {
+    transform: scale(0.95);
+}
+
+.project-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#projects h3 {
+    text-align: left;
+    margin: 2rem;
+    color: #838383;
+}
+
+#projects p {
+    color: #cdcdcd;
+}
+    
+
+#projects a {
+    padding: 0;
+    margin-top: 1rem;
+}
+
+#projects h4 {
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.case-study-link {
+    position: relative;
+    color: #FFB703;
+    margin: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.case-study-link:hover {
+    color: #fff;
+}
+
+.scroll-left, .scroll-right {
+    background-color: transparent;
+    border: none;
+    color: #838383;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+.project-container {
+    flex-direction: row;
+    width: 85vw;
+    gap: 0.3rem;
+    height: auto;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.image-container {
+    flex: 0 0 70vw;
+    scroll-snap-align: start;
+    margin-right: 10px;
+}
+
+.slider-buttons{
+    display: none;
+}
+
+}

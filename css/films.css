@@ -1,0 +1,129 @@
+
+/*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    background:
+        repeating-linear-gradient(0deg, transparent, transparent 50px, #F1F2F2 50px, #F1F2F2 51px),
+        repeating-linear-gradient(90deg, transparent, transparent 50px, #F1F2F2 50px, #F1F2F2 51px);
+        
+}
+
+/* ---------------Films----------------- */
+.logo{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+
+.films-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+#heading2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%, -50%);
+    text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    color: white;
+    z-index: 0;
+    transition: opacity 0.5s ease; /* Add transition for opacity */
+}
+
+#films-page-video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    border-radius: 0;
+    z-index: 0;
+}
+
+
+.iframe-container{
+    height: 50%;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-top: 5rem;
+}
+
+.films-description{
+    width: 40%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.films-description > h4 {
+    margin: 1rem;
+}
+
+.films-intro, .Gopro, .Sydney, .Melbourne, .three{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    align-content: center;
+    scroll-snap-align: start;
+    background:
+        repeating-linear-gradient(0deg, transparent, transparent 50px, #F1F2F2 50px, #F1F2F2 51px),
+        repeating-linear-gradient(90deg, transparent, transparent 50px, #F1F2F2 50px, #F1F2F2 51px),
+        white;
+
+        
+
+}
+
+
+
+
+/*------------------media queries-----------------*/
+@media screen and (max-width: 1000px){
+
+    .films-container {
+        width: 100vw;
+    }
+
+    .iframe-container{
+        width: 80%;
+    }
+
+    .films-description{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .iframe-container{
+        height: 40%;
+    }
+}
